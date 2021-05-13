@@ -21,7 +21,7 @@ clock set ??:??:?? ?? ???????? ????
 	service timestamps log datetime msec
 	
 	!Comprimento mínimo da criação das senhas do Tipo-5 ou Tipo-7
-	security passwords min-length 10
+	security passwords min-length 8
 	
 	!Verificar tentativas de conexão simultaneas, fazer o bloqueio de um
 	!período determinado do login
