@@ -1,0 +1,34 @@
+!Acessando o modo EXEC Privilégiado
+enable
+
+	!Acessando o modo de Configuração Global de Comandos
+	configure terminal
+		
+		!Configurando a Faixa de Exclusão de Endereços IPv4 do Escopo do DHCP Server
+		ip dhcp excluded-address 172.16.???.0 172.16.???.100
+		ip dhcp excluded-address 172.16.???.200 172.16.???.254
+		
+		!Configurando o Pool do DHCP Server da LAN
+		ip dhcp pool grupo-??
+		
+			!Configurando a Rede do Pool do DHCP da LAN
+			network 172.16.???.0 255.255.255.0
+			
+			!Configurando o Gateway padrão do Pool da LAN
+			default-router 172.16.???.254
+			
+			!Configurando o Endereço IPv4 do Servidor de DNS do Pool da LAN
+			dns-server 8.8.8.8
+			dns-server 8.8.4.4
+			
+			!Configurando o Nome de Domínio do Pool da LAN
+			domain-name cisco.com
+			
+			!Saindo de todos os níveis
+			end
+
+!Salvando as confgurações
+copy running-config startup-config
+
+!Verificando as informações do DHCP Server
+show ip dhcp pool
