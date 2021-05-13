@@ -1,7 +1,8 @@
 Reset do Roteador (Router)
 Utilizar o Putty para acessar o Router via Cabo Console.
 
-_01# Parar a inicialização do IOS utilizando Ctrl + Break (No Putty e Botão direito do Mouse na Barra de Título opção: Send Command: Break)
+_01# Parar a inicialização do IOS utilizando Ctrl + Break (No Putty e Botão direito do Mouse na Barra 
+de Título opção: Send Command: Break)
 
 _02# Nas configurações do Cisco ROMmon digite a chave em hexadecimal: confreg 0x2142 <Enter>
 
@@ -23,7 +24,8 @@ Utilizar o Putty para acessar o Switch via Cabo Console.
 
 _01# Deixar o Switch inicializar normalmente
 
-_02# Após a inicialização, pressionar o Botão Mode por apróximadamente 15/20 segundos até entrar no modo de ROMmon e o Switch ser reinicializado.
+_02# Após a inicialização, pressionar o Botão Mode por apróximadamente 15/20 segundos até entrar 
+no modo de ROMmon e o Switch ser reinicializado.
 
 =====================================================================================
 Caso o Switch não volte para o estado de fábrica, utilizar os procedimentos abaixo:
