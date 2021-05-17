@@ -158,4 +158,4 @@ copy running-config startup-config
 !show ip ospf database
 !show ip ospf database router
 !show ip ospf ??? (ID)
-!show ip ospf inteface
+!show ip ospf interface
