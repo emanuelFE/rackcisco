@@ -23,6 +23,6 @@ enable
 copy running-config startup-config
 
 !Visualizando as confgurações
-!show running-config
-!show ip interface brief
-!show ip route
+show running-config
+show ip interface brief
+show ip route
