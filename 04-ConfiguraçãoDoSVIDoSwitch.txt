@@ -27,5 +27,5 @@ enable
 copy running-config startup-config
 	
 !Comandos para visualização das informações:
-!show running-config
-!show ip interface brief
+show running-config
+show ip interface brief
