@@ -32,3 +32,5 @@ copy running-config startup-config
 
 !Verificando as informações do DHCP Server
 show ip dhcp pool
+ping 172.16.???.253
+ping 172.16.???.254
