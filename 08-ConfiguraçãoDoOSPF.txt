@@ -51,23 +51,23 @@
 Declaração das Redes OSPF entre os Grupos
 !Grupo 01
 !	172.16.1.0 0.0.0.255	(Primeiro Integrante do Grupo)
-!	192.168.1.0 0.0.0.3		(Grupo 01 para Grupo 02)
+!	192.168.1.0 0.0.0.3	(Grupo 01 para Grupo 02)
 !	192.168.1.20 0.0.0.3	(Grupo 06 para Grupo 01)
 !	
 !Grupo 02
 !	172.16.2.0 0.0.0.255	(Primeiro Integrante do Grupo)
-!	192.168.1.4 0.0.0.3		(Grupo 02 para Grupo 03)
-!	192.168.1.0 0.0.0.3		(Grupo 01 para Grupo 02)
+!	192.168.1.4 0.0.0.3	(Grupo 02 para Grupo 03)
+!	192.168.1.0 0.0.0.3	(Grupo 01 para Grupo 02)
 !	
 !Grupo 03
 !	172.16.3.0 0.0.0.255	(Primeiro Integrante do Grupo)
-!	192.168.1.8 0.0.0.3		(Grupo 03 para Grupo 04)
-!	192.168.1.4 0.0.0.3		(Grupo 02 para Grupo 03)
+!	192.168.1.8 0.0.0.3	(Grupo 03 para Grupo 04)
+!	192.168.1.4 0.0.0.3	(Grupo 02 para Grupo 03)
 !	
 !Grupo 04
 !	172.16.4.0 0.0.0.255	(Primeiro Integrante do Grupo)
 !	192.168.1.12 0.0.0.3	(Grupo 04 para Grupo 05)
-!	192.168.1.8 0.0.0.3		(Grupo 03 para Grupo 04)
+!	192.168.1.8 0.0.0.3	(Grupo 03 para Grupo 04)
 !	
 !Grupo 05
 !	172.16.5.0 0.0.0.255	(Primeiro Integrante do Grupo)
@@ -159,3 +159,10 @@ show ip ospf database
 show ip ospf database router
 show ip ospf ??? (ID)
 show ip ospf interface
+
+!Pingando os dispositivos de Router e Switch de outros Grupos
+ping 172.16.???.254
+ping 172.16.???.253
+
+!Pigando os dispostivos de Desktop e Notebook de outros Grupos
+ping 172.16.???.???
