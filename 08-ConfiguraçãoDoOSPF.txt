@@ -92,8 +92,8 @@ enable
     description Interface de Loopback para ID do OSPF
 
     !Endereço IPv4 para o ID do OSPF
-	!Verificar o endereçamento IP de Loopback do seu grupo
-	!Endereço IP utilizado para o gerenciamento e métrica do OSPF
+    !Verificar o endereçamento IP de Loopback do seu grupo
+    !Endereço IP utilizado para o gerenciamento e métrica do OSPF
     ip address ???.???.???.??? 255.255.255.255
     
     !Inicializando a interface
@@ -108,35 +108,35 @@ enable
   router ospf ??
   
     !Identificação do Roteador
-	!Verificar o endereço IP de Loopback do seu grupo
-	!OSPF utiliza o endereço de Loopback para gerenciar o processo local
+    !Verificar o endereço IP de Loopback do seu grupo
+    !OSPF utiliza o endereço de Loopback para gerenciar o processo local
     router-id ???.???.???.???
       
     !Desativando os anúncios do Protocolo OSPF na Interface da LAN
-	!Essa interface não vai anunciar suas rotas pela interface, mais pode receber anúncios
+    !Essa interface não vai anunciar suas rotas pela interface, mais pode receber anúncios
     passive-interface gigabitEthernet 0/0
 	
-	!Desativando os anúncios do Protocolo OSPF na Interface de Internet
-	!Essa interface não vai anunciar suas rotas pela interface, mais pode receber anúncios
-	passive-interface gigabitEthernet 0/1
+    !Desativando os anúncios do Protocolo OSPF na Interface de Internet
+    !Essa interface não vai anunciar suas rotas pela interface, mais pode receber anúncios
+    passive-interface gigabitEthernet 0/1
 
     !Configuração da referência de largura de banda (Métrica)
-	!Para o cálculo de custo dos links, padrão 10^8 = 100000000 bps
-	!Link tabela padrão de métrica do custo dos links do OSPF: 
-	!http://nomundodasredes.blogspot.com.br/2012/03/metrica-do-ospf.html
-	!https://ciscoredes.com.br/wp-content/uploads/2012/06/Cost_Interface.png
+    !Para o cálculo de custo dos links, padrão 10^8 = 100000000 bps
+    !Link tabela padrão de métrica do custo dos links do OSPF: 
+    !http://nomundodasredes.blogspot.com.br/2012/03/metrica-do-ospf.html
+    !https://ciscoredes.com.br/wp-content/uploads/2012/06/Cost_Interface.png
     auto-cost reference-bandwidth 10000
   
     !Registrar todas as alterações de adjacencia e o estado dos links
-	!Esses registros vão ficar armazenados no log do sistema
+    !Esses registros vão ficar armazenados no log do sistema
     log-adjacency-changes detail
 	
     !Declarando as redes fisicamente conectadas
-	!Utilizando o recurso de Wildcad Mask (máscara coringa - máscara invertida)
+    !Utilizando o recurso de Wildcad Mask (máscara coringa - máscara invertida)
     !Configuração da Área 0 (Single Area - Backbone, obrigatória existir)
     !Calculando a máscara coringa: 255.255.255.255 - sua_mascara
     !Exemplo: 255.255.255.255 - 255.255.255.252 = 0.0.0.3
-	!Verificar a tabela de Endereçamento para ver a sua Rede
+    !Verificar a tabela de Endereçamento para ver a sua Rede
     network 172.16.???.0 0.0.0.255 area 0
     network 192.168.1.??? 0.0.0.3 area 0
     network 192.168.1.??? 0.0.0.3 area 0
@@ -148,14 +148,14 @@ enable
 copy running-config startup-config
 
 !Comandos de Verificação do OSPF
-!show running-config
-!show ip protocols
-!show ip interface brief
-!show ip route
-!show ip route ospf 
-!show ip route ospf ??? (ID)
-!show ip ospf neighbor
-!show ip ospf database
-!show ip ospf database router
-!show ip ospf ??? (ID)
-!show ip ospf interface
+show running-config
+show ip protocols
+show ip interface brief
+show ip route
+show ip route ospf 
+show ip route ospf ??? (ID)
+show ip ospf neighbor
+show ip ospf database
+show ip ospf database router
+show ip ospf ??? (ID)
+show ip ospf interface
