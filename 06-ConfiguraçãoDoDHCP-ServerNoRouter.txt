@@ -18,8 +18,7 @@ enable
 			default-router 172.16.???.254
 			
 			!Configurando o Endereço IPv4 do Servidor de DNS do Pool da LAN
-			dns-server 8.8.8.8
-			dns-server 8.8.4.4
+			dns-server 8.8.8.8 8.8.4.4
 			
 			!Configurando o Nome de Domínio do Pool da LAN
 			domain-name cisco.com
