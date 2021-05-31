@@ -29,7 +29,13 @@ enable
 !Salvando as confgurações
 copy running-config startup-config
 
-!Verificando as informações do DHCP Server
+!Verificando as informações do Pool DHCP Server
 show ip dhcp pool
+
+!Testando o ping no Notebook GNU/Linux
 ping 172.16.???.253
 ping 172.16.???.254
+
+!Acessando remoto o Switch e Router utilizando o SSH no GNU/Linux ou Windows 10 Powershell
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes128-cbc seu_usuario@172.16.???.253
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes128-cbc seu_usuario@172.16.???.254
