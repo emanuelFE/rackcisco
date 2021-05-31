@@ -1,0 +1,20 @@
+!Configuração do Access Point TP-Link
+
+Modelo D-Link DIR-809
+Segurar o Botão WPS/Reset por 10 segundos
+Após soltar, todos os LED´s deve piscar e
+os LED´s de rede ficar ligados e depois apagar
+Manual: https://www.dlink.com.br/wp-content/uploads/2018/10/DIR-809_A2_Manual_v1.00DI.pdf
+
+Modelo D-Link DIR-819
+Segurar o Botão WPS/Reset por 10 segundos
+Após soltar, todos os LED´s deve piscar e
+os LED´s de rede ficar ligados e depois apagar
+Manual: https://www.dlink.com.br/wp-content/uploads/2018/10/DIR-819_A1_PPPoE.pdf
+
+Grupo-01 - Rede: 172.16.10.0/24  - IP-WAN: DHCP - IP-LAN: 172.16.10.254
+Grupo-02 - Rede: 172.16.60.0/24  - IP-WAN: DHCP - IP-LAN: 172.16.60.254
+Grupo-03 - Rede: 172.16.110.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.110.254
+Grupo-04 - Rede: 172.16.160.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.160.254
+Grupo-05 - Rede: 172.16.210.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.210.254
+Grupo-06 - Rede: 172.16.254.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.254.254
