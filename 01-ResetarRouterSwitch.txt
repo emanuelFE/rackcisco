@@ -28,6 +28,7 @@ teste mudando as velocidades para: 1200, 2400, 4800, 9600, 19200, 38400, 57600, 
 Obs2: será necessário alterar novamente a chave de registro para: config-register 0x2102 <Enter>
 configurar a velocidade do console: line console 0 <Enter>, speed 9600 <Enter>, salvar as
 configurações: copy running-config startup e reinicializar o router: reload <Enter>
+
 =====================================================================================
 Reset do Switch
 Utilizar o Putty para acessar o Switch via Cabo Console.
