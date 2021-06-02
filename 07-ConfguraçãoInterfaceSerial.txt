@@ -74,5 +74,6 @@ enable
 !Comandos para visualização das informações:
 show running-config
 show ip interface brief
+show ip route
 ping 192.168.1.??? (serial 0/0/0)
 ping 192.168.1.??? (serial 0/0/1)
