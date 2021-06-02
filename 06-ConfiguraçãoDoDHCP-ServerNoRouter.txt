@@ -41,7 +41,7 @@ systemd-resolve --status
 ping 172.16.???.253
 ping 172.16.???.254
 
-!Limpando as configurações antigas de acesso remoto ao Switch e Router
+!Limpando as configurações antigas de acesso remoto ao Switch e Router (Terminal: Ctrl+Alt+T)
 rm -v .ssh/known_hosts
 
 !Acessando remoto o Switch e Router utilizando o SSH no GNU/Linux ou Windows 10 Powershell
