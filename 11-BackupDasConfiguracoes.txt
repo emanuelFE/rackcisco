@@ -8,7 +8,7 @@ enable
 	
 	!Salvando uma cópia das confgurações para FLASH
 	copy startup-config flash:
-	dir flash
+	dir flash:
 	
 	!Salvando as configurações para NOTEPAD++
 	show running-config
@@ -23,7 +23,7 @@ enable
 	
 	!Salvando uma cópia das confgurações para FLASH
 	copy startup-config flash:
-	dir flash
+	dir flash:
 	
 !Salvando as configurações para NOTEPAD++
 show running-config
