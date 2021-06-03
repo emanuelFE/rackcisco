@@ -18,3 +18,6 @@ Grupo-03 - Rede: 172.16.110.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.110.254  - SSID
 Grupo-04 - Rede: 172.16.160.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.160.254  - SSID G-04 - Senha: 123@senac
 Grupo-05 - Rede: 172.16.210.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.210.254  - SSID G-05 - Senha: 123@senac
 Grupo-06 - Rede: 172.16.254.0/24 - IP-WAN: DHCP - IP-LAN: 172.16.254.254  - SSID G-06 - Senha: 123@senac
+
+Software de Análise de Rede Sem-Fio
+WiFiMan: https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=pt_BR&gl=US
