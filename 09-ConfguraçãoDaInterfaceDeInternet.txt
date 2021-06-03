@@ -35,4 +35,5 @@ copy running-config startup-config
 show running-config
 show ip interface brief
 ping 10.26.40.191
+ping 10.26.40.190
 ping 8.8.8.8
