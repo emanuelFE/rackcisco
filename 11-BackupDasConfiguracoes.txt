@@ -25,5 +25,5 @@ enable
 	copy startup-config flash:
 	dir flash:
 	
-!Salvando as configurações para NOTEPAD++
-show running-config
+	!Salvando as configurações para NOTEPAD++
+	show running-config
